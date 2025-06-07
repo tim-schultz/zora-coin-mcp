@@ -1,0 +1,11 @@
+{
+	"formatter": {
+		"ignore": ["./build", "node_modules/**/*", "public/**/*"]
+	},
+	"linter": {
+		"ignore": ["./build", "node_modules/**/*", "public/**/*"]
+	},
+	"files": {
+		"maxSize": 6097152
+	}
+}

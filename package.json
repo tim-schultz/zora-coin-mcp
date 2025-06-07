@@ -1,0 +1,27 @@
+{
+	"name": "zora-coin-mcp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "vitest run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.7.1",
+	"dependencies": {
+		"@0xsplits/splits-sdk": "^5.1.0",
+		"@modelcontextprotocol/sdk": "^1.12.1",
+		"@zoralabs/coins-sdk": "0.2.0",
+		"express": "^5.1.0",
+		"tsx": "^4.19.4",
+		"viem": "^2.30.6",
+		"vitest": "^3.2.2",
+		"zod": "^3.25.55"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4"
+	}
+}
