@@ -114,14 +114,15 @@ The server will run as a stdio-based MCP server, ready to receive tool calls fro
 
 ### Major Limitations
 
-1. **Testing**: I setup `src/zora-mcp.test.ts` as a sort of hybrid integration test. I wanted to make actual requests to the test RPC to ensure that tools were functioning as expected. In a production environment I would probably setup a testing library more suitable for E2E tests even though vitest worked pretty well
+1. **Testing**: I setup `src/zora-mcp.test.ts` as a hybrid integration test. I wanted to make actual requests to a RPC to ensure that tools were functioning as expected. In a production environment I would have setup a testing library more suitable for E2E tests even though vitest worked well in this time constrained scenario.
 2. **Private Key Exposure**: This requires the user to provide their private key as a setting
     - Depending on the requirements using Account Abstraction for transaction management could be a useful solution
+    - Using something like Privy could be a cool solution allowing the use of Oauth for transaction signing without the need of a private key
     - You could also apply delegation and permissions within the server or gated with a smart contract
     - You could add further safe guards such as limiting purchasing of more than $x of tokens.
 3. **STDIO**: 
     - Publish package to npm to make it easier to install via npx
-4. **Streamable HTTP Transport**: This could be a useful alternative depending on the requirements. It would allow better analytics and further control on changes to the server. The negative being that it would shift some of the trust assumption to a more closed system
+4. **Streamable HTTP Transport**: This could be a useful alternative depending on the requirements. It would allow better analytics and further control on changes to the server. The negative being that it would shift some of the trust assumption to a more closed system. Although an Oauth integration with Privy for tx signing could be the bet of both worlds.
 
 ### Operational Limitations
 
