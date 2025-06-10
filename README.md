@@ -120,7 +120,7 @@ The server will run as a stdio-based MCP server, ready to receive tool calls fro
     - Using something like Privy could be a cool solution allowing the use of Oauth for transaction signing without the need of a private key
     - You could also apply delegation and permissions within the server or gated with a smart contract
     - You could add further safe guards such as limiting purchasing of more than $x of tokens.
-3. **STDIO**: 
+3. **Installation**: 
     - Publish package to npm to make it easier to install via npx
 4. **Streamable HTTP Transport**: This could be a useful alternative depending on the requirements. It would allow better analytics and further control on changes to the server. The negative being that it would shift some of the trust assumption to a more closed system. Although an Oauth integration with Privy for tx signing could be the bet of both worlds.
 
